@@ -1,0 +1,53 @@
+body{
+    background-color: #132032;
+    color: #F1F7ED;
+}
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%
+}
+.flexContainer img{
+    width: 300px;
+    height: 200px;
+    object-fit: contain;
+}
+.skill1{
+    width: 25%;   
+}
+.skill2{
+    width: 25%;  
+}
+.skill3{
+    width: 25%;   
+}
+h1{
+    text-align: center;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "workImg workContent"
+    "workImg workContent"
+    "workImg workContent";
+    object-fit: contain;
+    align-content: center;
+    justify-content: center;
+    padding-left: 15%;
+}
+.workImg{
+    padding-top: 20px;
+}
+.workContent{
+    padding-left: 150px;
+    padding-top: 60px
+}
+.viewButton{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 600){}
