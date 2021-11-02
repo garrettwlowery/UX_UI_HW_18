@@ -2,8 +2,10 @@ body{
     background-color: #132032;
     color: #F1F7ED;
 }
+/* Flex CSS */
 .flexContainer{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 10px;
     text-align: center;
@@ -27,22 +29,38 @@ body{
 h1{
     text-align: center;
 }
+/* Grid CSS */
 .workGrid{
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-areas:
-    "workImg workContent"
-    "workImg workContent"
-    "workImg workContent";
+    "workImg1 workContent1"
+    "workImg2 workContent2"
+    "workImg3 workContent3";
     object-fit: contain;
     align-content: center;
     justify-content: center;
     padding-left: 15%;
 }
-.workImg{
+.workImg1{
     padding-top: 20px;
 }
-.workContent{
+.workImg2{
+    padding-top: 20px;
+}
+.workImg3{
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.workContent1{
+    padding-left: 150px;
+    padding-top: 60px
+}
+.workContent2{
+    padding-left: 150px;
+    padding-top: 60px
+}
+.workContent3{
     padding-left: 150px;
     padding-top: 60px
 }
@@ -50,4 +68,40 @@ h1{
     display: flex;
     justify-content: center;
 }
-@media only screen and (max-width: 600){}
+
+@media only screen and (max-width: 600px){
+    .flexContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill1{
+        width: 100%;   
+        }
+    .skill2{
+        width: 100%;  
+        }
+    .skill3{
+        width: 100%; 
+    }
+    .workGrid {
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "workImg1"
+        "workContent1"
+        "workImg2"
+        "workContent2"
+        "workImg3"
+        "workContent3";
+        padding-left: 5%;
+    }
+    .workImg1, .workImg2, .workImg3P{
+        padding-left: 0%;
+    }
+    .workContent1, .workContent2, .workContent3{
+       padding-left: 0px;
+    }
+    .workImg3{
+        padding-left: 50px;
+    }
+}
