@@ -1,6 +1,7 @@
 body{
     background-color: #132032;
     color: #F1F7ED;
+    font-family: 'Spartan', sans-serif;
 }
 /* Flex CSS */
 .flexContainer{
@@ -28,6 +29,10 @@ body{
 }
 h1{
     text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+h3{
+    font-family: 'Playfair Display', serif;
 }
 /* Grid CSS */
 .workGrid{
